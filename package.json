@@ -1,0 +1,12 @@
+{
+  "name": "agri-gyan-root",
+  "private": true,
+  "description": "Root wrapper – actual project is in ./agri-gyan--main",
+  "scripts": {
+    "install:all": "npm install --prefix agri-gyan--main && npm install --prefix agri-gyan--main/backend",
+    "dev": "npm run dev:all --prefix agri-gyan--main",
+    "dev:frontend": "npm run dev --prefix agri-gyan--main",
+    "dev:backend": "npm run dev:backend --prefix agri-gyan--main",
+    "build": "npm run build --prefix agri-gyan--main"
+  }
+}
